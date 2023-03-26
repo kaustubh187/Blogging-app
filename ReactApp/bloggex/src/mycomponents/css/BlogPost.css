@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Koulen&family=Montserrat&family=Playfair+Display:ital,wght@1,700&display=swap');
+.cardcon{
+    padding: 18px;
+    flex: 1 1 1 45%;
+    
+}
+
+.card {
+    width: 55vh;
+    height: 55vh;
+    background: #ffffff;
+    position: relative;
+    border: none;
+    overflow: visible;
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+   }
+   
+   .card-img {
+    
+    min-width: 80%;
+    min-height: 50%;
+    border-radius: .5rem;
+    transition: .3s ease;
+   }
+   
+   .card-info {
+    padding-top: 10%;
+    align-items: left;
+   }
+   
+   svg {
+    width: 20px;
+    height: 20px;
+   }
+   
+   .card-footer {
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    background-color: rgba(255, 192, 203, 0);
+    border-top: 1px solid #dddddd00;
+   }
+   
+   /*Text*/
+   .text-title {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 2.3em;
+    line-height: 1.3;
+   }
+   .card-footer .text-title {
+    font-family: serif;
+    color: rgb(69, 61, 61);
+    text-align: left;
+    font-weight: 200;
+    font-size: 1.3em;
+    line-height: 1.3;
+   }
+   .text-body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 1.1em;
+    padding-bottom: 10px;
+   }
+   
+   
+   /*Hover*/
+   .card-img:hover {
+    transform: translateY(-5%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+   

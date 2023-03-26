@@ -1,0 +1,16 @@
+.colarr{
+    position: relative;
+    left: -10px;
+    position:"relative";
+    top:20px;
+    display: "inline-block";
+    
+}
+.card-col{
+    position: relative;
+    left: 6%;
+    width:90%;
+    top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
