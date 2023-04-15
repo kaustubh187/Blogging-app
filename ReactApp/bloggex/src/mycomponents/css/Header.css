@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Bebas+Neue&family=Koulen&family=Merriweather:ital,wght@1,900&family=Montserrat&family=Playfair+Display:ital,wght@1,700&family=Spectral:wght@600&display=swap');
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(236, 232, 212, 0);
+    padding: 13px;
+  }
+  
+  .navbar-title {
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+    font-weight: 800;
+    position: relative;
+    right: -60px;
+    font-size: 74px;
+    margin:auto;
+    color: rgb(88, 44, 129);
+  }
+  .tagline{
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+    font-weight: 200;
+    position: relative;
+    right: 649.5px;
+    top: 50px;
+    font-size: 14px;
+  }
+  .navbar-links {
+    display: flex;
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+  }
+  
+  .navbar-links li:first-child {
+    margin-left: auto;
+  }

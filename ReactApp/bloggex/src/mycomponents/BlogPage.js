@@ -1,38 +1,38 @@
 import React , { useEffect, useState }  from 'react'
-import Header from './Header'
 import { useParams } from 'react-router';
+import './css/BlogPage.css'
 export default function BlogPage({bloglist}) {
-    let titlestyle={
-        position:"relative",
-        top:"10vh",
-        backgroundColor:"red",
-        width:"80vh",
-        left:"65vh",
-        height:"15vh",
-    }
     const { id } = useParams();
-    const [blog, setBlog] = useState({});
-
-    useEffect(() => {
-        let blog = bloglist.find((blog) => blog.sno === parseInt(id));
-        if (blog) {
-          setBlog(blog);
-        }
-      }, [bloglist,id]);
-
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
+    const [blog, setBlog] = useState([]);
+   useEffect(() => {
+      fetch(`http://localhost:8585/api/v1/post/get-post-by-id/${id}`)
+         .then((response) => response.json())
+         .then((data) => {
+            console.log(data);
+            setBlog(data);
+         })
+         .catch((err) => {
+            console.log(err.message);
+         });
+   }, [id]);
+   const cvpage={
+    backgroundImage: `url(${blog.imgurl})` 
+   };
   return (
-    <div>
-        <Header/>
-        
-        <div className="title" style ={titlestyle}>
-            <h1>{blog.title}</h1>
-            <h4>{blog.author}</h4>
-            <h4>Date created</h4>
-        </div>
-        <div className="bod" style={{position:"relative",top:"100px",alignContent:"left" ,width:"140vh",margin:"auto"}}>
-            <p>{blog.desc}</p>
-        </div>
-    
+    <div className='wholepage'>
+      <div className="cover-page" style = {cvpage}>
+            <div className="heading">
+              <h1>{blog.title}</h1>
+              <p>{blog.description}</p>
+            </div>
+      
+      </div>
+      <div className="content">
+      <p>{blog.content}</p>
+      </div>
     </div>
   )
 }

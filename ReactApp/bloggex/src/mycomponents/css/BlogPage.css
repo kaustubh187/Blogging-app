@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Bebas+Neue&family=Koulen&family=Merriweather:ital,wght@1,900&family=Montserrat&family=Noto+Serif&family=Playfair+Display:ital,wght@1,700&family=Spectral:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Koulen&family=Montserrat&family=Playfair+Display:ital,wght@1,700&family=Spectral:wght@600&display=swap');
+.wholepage{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: rgba(154, 123, 154, 0);
+}
+.cover-page{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.3)),url("https://images.unsplash.com/photo-1588152850700-c82ecb8ba9b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 840px;
+    width: 100%;
+}
+.heading{
+    margin: auto;
+    background-color: rgba(0, 128, 0, 0);
+    position: relative;
+    top: 38%;
+}
+.heading h1{
+    color: white;
+    text-shadow: -2px -2px 0 black,-2px -1px 0 black,-2px 0px 0 black,-2px 1px 0 black,-2px 2px 0 black,-1px -2px 0 black,-1px -1px 0 black,-1px 0px 0 black,-1px 1px 0 black,-1px 2px 0 black,0px -2px 0 black,0px -1px 0 black,0px 0px 0 black,0px 1px 0 black,0px 2px 0 black,1px -2px 0 black,1px -1px 0 black,1px 0px 0 black,1px 1px 0 black,1px 2px 0 black,2px -2px 0 black,2px -1px 0 black,2px 0px 0 black,2px 1px 0 black,2px 2px 0 black;
+    font-family:'Spectral', serif;
+    font-size: 10vh;
+    font-weight: 600;
+}
+.heading p{
+    text-shadow: -2px -2px 0 black,-2px -1px 0 black,-2px 0px 0 black,-2px 1px 0 black,-2px 2px 0 black,-1px -2px 0 black,-1px -1px 0 black,-1px 0px 0 black,-1px 1px 0 black,-1px 2px 0 black,0px -2px 0 black,0px -1px 0 black,0px 0px 0 black,0px 1px 0 black,0px 2px 0 black,1px -2px 0 black,1px -1px 0 black,1px 0px 0 black,1px 1px 0 black,1px 2px 0 black,2px -2px 0 black,2px -1px 0 black,2px 0px 0 black,2px 1px 0 black,2px 2px 0 black;
+    margin: auto;
+    width: 38%;
+    color: white;
+    font-size: 2.8vh;
+}
+.content{
+    float: right;
+    margin-top: 50px;
+    margin-right: 40px;
+    position: relative;
+    width: 63%;
+}
+.content p{
+    font-family: 'Noto Serif', serif;
+    font-weight: 550;
+    text-align: left;
+    font-size: 21px;
+}

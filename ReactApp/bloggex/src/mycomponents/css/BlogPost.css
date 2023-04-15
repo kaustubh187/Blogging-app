@@ -2,12 +2,12 @@
 .cardcon{
     padding: 18px;
     flex: 1 1 1 45%;
-    
+    transition: 0.5s ease-in-out;
 }
 
 .card {
     width: 55vh;
-    height: 55vh;
+    height: 65vh;
     background: #ffffff;
     position: relative;
     border: none;
@@ -43,9 +43,10 @@
    
    /*Text*/
    .text-title {
+    color: black;
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 500;
+    font-weight: 50;
     font-size: 2.3em;
     line-height: 1.3;
    }
@@ -59,6 +60,7 @@
    }
    .text-body {
     font-family: 'Times New Roman', Times, serif;
+    color: black;
     text-align: left;
     font-size: 1.1em;
     padding-bottom: 10px;
@@ -66,8 +68,8 @@
    
    
    /*Hover*/
-   .card-img:hover {
-    transform: translateY(-5%);
+   .cardcon:hover {
+    transform: translateY(-3%);
     box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
    }
    
